@@ -49,7 +49,7 @@ const deleteUser = async (req, res) => {
       return res.status(404).json({ message: 'User not found' });
     }
     // Remove associated thoughts when a user is deleted
-    // ... your logic to remove associated thoughts ...
+    // ... logic to remove associated thoughts ...
 
     return res.status(200).json({ message: 'User deleted successfully' });
   } catch (error) {
