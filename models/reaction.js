@@ -1,6 +1,7 @@
-const { Schema, Types } = require("mongoose");
+const { Schema, Types } = require('mongoose');
 
-const reactionSchema = new Schema({
+const reactionSchema = new Schema(
+  {
   reactionId: {
     type: Schema.Types.ObjectId,
     default: () => new Types.ObjectId(),
@@ -20,6 +21,14 @@ const reactionSchema = new Schema({
     default: Date.now,
     get: (timeStamp) => timeStamp.toLocaleDateString(),
   },
-});
+},
+{
+  toJSON: 
+  {
+    getters: true,
+  },
+  id: false,
+}
+);
 
 module.exports = reactionSchema;

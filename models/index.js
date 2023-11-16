@@ -1,8 +1,8 @@
-const userRoutes = require('./userRoutes');
-const thoughtRoutes = require('./thoughtRoutes');
+const User = require('./User');
+const Thought = require('./Thought');
 
 module.exports = {
-  userRoutes, 
-  thoughtRoutes, 
+  User,
+  Thought
 };
 
