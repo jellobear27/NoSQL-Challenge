@@ -10,9 +10,11 @@ const UserController = {
 
   
   getUserById(req, res) {
-    User.findById(req.params.userId)
+    User.findById(req.params.userId).populate("thoughts").populate("friends")
       .then(userData => res.json(userData))
-      .catch(err => res.status(500).json(err));
+      .catch(err => {
+        console.log(err)
+        res.status(500).json(err)});
   },
   
   

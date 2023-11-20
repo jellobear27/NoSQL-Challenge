@@ -29,6 +29,12 @@ const ThoughtController = {
   async createThought(req, res) {
     try {
       const thought = await Thought.create(req.body);
+      const user = await User.findByIdAndUpdate(req.body.userId,
+        {
+          $addToSet: {thoughts: thought._id}
+        }, {
+          new: true
+        })
       res.status(201).json(thought);
     } catch (err) {
       res.status(500).json(err);
