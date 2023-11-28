@@ -38,20 +38,22 @@ The Social Network API provides the following functionalities:
 
 To run this application locally, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jellobear27/NoSQL-Challenge
-2. Navigate to the project directory: cd social-network-api
-3. Install dependencies: npm install
-4. Once the server is running, use a tool like Insomnia to test the API endpoints.
-5. Use Insomnia to test http://localhost:3001 with the following route end points API GET, POST, PUT, and DELETE routes for categories, products, and tags, ensuring successful creation, updating, and deletion of data in the database.
+- ``Clone the repository:``
+   ``git clone https://github.com/jellobear27/NoSQL-Challenge``
+- ``Navigate to the project directory``
+- ``Install dependencies: npm install``
+- ``run server: npm start``
+- ``Once the server is running, use a tool like Insomnia to test the API endpoints.``
+- ``Use Insomnia to test http://localhost:3000 with the following route end points API GET, POST, PUT, and DELETE routes for categories, products, and tags, ensuring successful creation, updating, and deletion of data in the database.``
 
-## Walk through videio:
+## Walk through video: 
+``https://drive.google.com/file/d/1IsskWaCuGHi0FczwmJkhJ6BMErXFAF22/view?usp=sharing``
 
 ##Contributing:
 Tutor Assistence: Bobbi Tarkany
 
-##License:MIT https://opensource.org/license/mit/
+## License:MIT 
+`https://opensource.org/license/mit/`
 
 Copyright <2023> <COPYRIGHT Janell Smith>
 
