@@ -39,7 +39,7 @@ The Social Network API provides the following functionalities:
 To run this application locally, follow these steps:
 
 - ``Clone the repository:``
-   ``git clone https://github.com/jellobear27/NoSQL-Challenge``
+   git clone: https://github.com/jellobear27/NoSQL-Challenge
 - ``Navigate to the project directory``
 - ``Install dependencies: npm install``
 - ``run server: npm start``
